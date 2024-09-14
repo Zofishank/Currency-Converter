@@ -28,15 +28,24 @@ body{
     background: white;
     border-radius: 10px;
 }
-.img{
+
+.image{
     display: flex;
     align-items: center;
     justify-content: center;
     rotate: 39deg;
+    margin-bottom: -22px;
+
+}
+.title h1{
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    text-transform: capitalize;
 }
 
 .input,.result{
-    width: 300px;
+    width: 280px;
     height: 40px;
     border: 2px solid #293136;
     outline: none;
@@ -52,20 +61,17 @@ body{
 
 .c_names{
     width: 100%;
-    padding: 12px 0px;
+    padding: 3px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 13px;
 }
-.from_div,.to_div{
-    color: black;
-    font-size: 16px;
-}
+
 .from_div p,.to_div p{
     color: black;
     font-size: 16px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     padding-left: 10px;
     font-weight: 600;
 }
@@ -76,6 +82,9 @@ body{
     border: 2px solid #293136;
     border-radius: 8px;
     padding: 4px 10px;
+}
+.img{
+    width: 20px;
 }
 select{
     width: 60px;
@@ -99,10 +108,11 @@ select{
     border-radius: 50%;
     border: 2px solid #293136;
     margin: 3px;
+    margin-bottom: -30px;
 }
 
 .btn{
-    width: 300px;
+    width: 280px;
     height: 40px;
     border: none;
     outline: none;
@@ -112,9 +122,57 @@ select{
     margin: 10px;
     font-size: 14px;
     font-weight: 500;
+    margin-top: 20px;
 }
 .result{
     color: #293136;
     font-size: 13px;
 
+}
+
+
+
+@media (max-width: 450px){
+    .converter{
+        padding: 40px 18px;
+    }
+    .image{
+        margin-bottom: -20px;
+    }
+    .image img{
+        width: 120px;
+    }
+    .title h1{
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        text-transform: capitalize;
+    }
+    .input,.result{
+        width: 225px;
+    }.btn{
+        width: 225px;
+        margin-top: 13px;
+    }
+    .img{
+        width: 18px;
+    }
+    .from,.to{
+        padding: 2px 7px;
+    }
+    .from_div p,.to_div p{
+        text-align: center;
+        padding-left: 0px;
+        padding-bottom: 5px;
+
+    }
+    select{
+        width: 53px;
+    }
+    .c_names{
+        gap: 2px;
+    }
+    .exchange_icon{
+        margin-top: -40px;
+    }
 }
